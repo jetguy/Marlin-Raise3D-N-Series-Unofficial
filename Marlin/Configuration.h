@@ -74,7 +74,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Jetguy, custom config)" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -95,13 +95,13 @@
 
 
 //=====Raise3D modified======//
-#define STRING_VERSION "1.2.1" //version information is set in the Version.h file.
+#define STRING_VERSION "1.2.1J" //version information is set in the Version.h file.
 #define RAISE_VERSION STRING_VERSION
 #define N_SERIES_PROTOCLE
 #define N2PLUS //valid options N1, N2, N2PLUS
 
 #define DUAL  //Comment this line to get single head version firmware.
-#define EXT0_STEPE 94 // (left side) Set EXT0 STEPE here. default is 94. bondtech is 140.
+#define EXT0_STEPE 94 // (left side) Set EXT0 STEPE here. default is 94. bondtech is 140. Bondtech BMG is 415.
 #define EXT1_STEPE 94 // (right side) Set EXT1 STEPE here. default is 94. bondtech is 140. bondtech QR universal is 476.5
 
 /**
@@ -1599,14 +1599,14 @@
  */
 //#define FILAMENT_WIDTH_SENSOR
 
-#define DEFAULT_NOMINAL_FILAMENT_DIA 3.00   // (mm) Diameter of the filament generally used (3.0 or 1.75mm), also used in the slicer. Used to validate sensor reading.
+#define DEFAULT_NOMINAL_FILAMENT_DIA 1.75   // (mm) Diameter of the filament generally used (3.0 or 1.75mm), also used in the slicer. Used to validate sensor reading.
 
 #if ENABLED(FILAMENT_WIDTH_SENSOR)
   #define FILAMENT_SENSOR_EXTRUDER_NUM 0    // Index of the extruder that has the filament sensor (0,1,2,3)
   #define MEASUREMENT_DELAY_CM        14    // (cm) The distance from the filament sensor to the melting chamber
 
-  #define MEASURED_UPPER_LIMIT         3.30 // (mm) Upper limit used to validate sensor reading
-  #define MEASURED_LOWER_LIMIT         1.90 // (mm) Lower limit used to validate sensor reading
+  #define MEASURED_UPPER_LIMIT         2.0 // (mm) Upper limit used to validate sensor reading
+  #define MEASURED_LOWER_LIMIT         1.5 // (mm) Lower limit used to validate sensor reading
   #define MAX_MEASUREMENT_DELAY       20    // (bytes) Buffer size for stored measurements (1 byte per cm). Must be larger than MEASUREMENT_DELAY_CM.
 
   #define DEFAULT_MEASURED_FILAMENT_DIA DEFAULT_NOMINAL_FILAMENT_DIA // Set measured to nominal initially
