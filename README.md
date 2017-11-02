@@ -1,6 +1,9 @@
 # Raise3D N-Series Unofficial firmware version 1.2.1 (Marlin firmware version 1.1.0)
 
 ## Version History
+#### v1.2.1.1J
+* Enabled temperature controlled extruder fan cooling for both extruders to Fan 0 on extruder breakout board.
+
 #### v1.2.1.1
 * Fixed a issue with the bed. I forgot to define the PIDTEMPBED.
 
